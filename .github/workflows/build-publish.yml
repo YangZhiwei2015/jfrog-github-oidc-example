@@ -26,9 +26,9 @@ jobs:
        - name: Setup JFrog CLI
          uses: jfrog/setup-jfrog-cli@v3
          env:  
-           JF_URL: ${{ secrets.JF_URL }}
+           JF_URL: https://jasmine1988.jfrog.i0
          with:
-           oidc-provider-name: ${{ env.OIDC_PROVIDER }}
+           oidc-provider-name: jordan
            oidc-audience: ${{ env.OIDC_AUDIENCE }}
 
        - name: Set CLI Config
